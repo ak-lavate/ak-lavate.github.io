@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AK Lavate | Cybersecurity Interface</title>
+<meta name="description" content="AK Lavate — Cybersecurity Specialist focused on Social Engineering, Behavioral Security, and Digital Intelligence Systems.">
+
+<meta name="keywords" content="AK Lavate, Cybersecurity, Social Engineering, OSINT, Ethical Hacker, Security Analyst">
+
+<meta name="author" content="AK Lavate">
+
+<meta property="og:title" content="AK Lavate | Cyber Intelligence Portfolio">
+<meta property="og:description" content="Cybersecurity • Social Engineering • Digital Psychology">
+<meta property="og:type" content="website">
+
+<meta name="theme-color" content="#00ffa6">
+<link rel="stylesheet" href="home.css">
+<link rel="icon" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+  <div id="threatLevel">Threat Level: LOW</div>
+
+<canvas id="matrix"></canvas>
+<canvas id="bgCanvas"></canvas>
+<canvas id="neuralCanvas"></canvas>
+
+<!-- COMMAND CONSOLE -->
+<div id="console" class="console hidden">
+
+    <div class="console-header">
+        AK Interface Console — type "help"
+    </div>
+
+    <div id="console-output"></div>
+
+    <div class="console-input-line">
+        <span>></span>
+        <input id="console-input" autocomplete="off" />
+    </div>
+
+</div>
+
+<!-- RECRUITER MODE -->
+
+<div id="recruiterMode" class="recruiter hidden">
+
+<h3>Recruiter Mode Activated</h3>
+
+<p>
+Hello,
+If you discovered this panel, you already demonstrated curiosity —
+a critical trait in cybersecurity and social engineering analysis.
+</p>
+
+<p>
+AK Lavate specializes in human-centric security,
+behavioral analysis, and offensive thinking.
+</p>
+
+<p>
+📩 Direct Contact: contact@ak-lavate.tech<br>
+⚡ Availability: Open to Security & Research Opportunities
+</p>
+
+<button onclick="closeRecruiter()">Close</button>
+
+</div>
+
+<!-- MATRIX BACKGROUND -->
+ 
+<div id="bootScreen">
+  <div id="boot"></div>
+</div>
+
+<section class="intel-panel">
+  <h3>INTELLIGENCE LOG</h3>
+  <div id="intelLog"></div>
+</section>                                                                                                                                                                                                                                                                                                                                                                                                              
+
+<nav class="nav">
+    <div class="logo">AK //</div>
+
+    <div class="menu">
+        <a href="#about">Identity</a>
+        <a href="#skills">Capabilities</a>
+        <a href="#projects">Operations</a>
+        <a href="#research">Research</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+
+<div class="hero-container">
+
+    <!-- LEFT SIDE TEXT -->
+    <div class="hero-text">
+
+        <h1>Akash Lavate</h1>
+
+        <div class="system-hud">
+            <span>SYSTEM: ONLINE</span>
+            <span>AI CORE: ACTIVE</span>
+            <span>SECURITY LEVEL: MAX</span>
+        </div>
+
+        <p id="dynamic-role">Cybersecurity Specialist</p>
+
+        <div class="hero-intro">
+
+            <p class="hero-role">
+                Cybersecurity Enthusiast • Social Engineering Analyst
+            </p>
+
+            <p class="hero-about">
+                Bachelor of Computer Applications (BCA) graduate with a strong interest
+                in cybersecurity, social engineering, and human psychology in digital
+                environments. I focus on understanding how attackers exploit human
+                behavior and how security awareness can prevent real-world cyber threats..
+            </p>
+
+            <div class="hero-actions">
+                <a href="#capabilities" class="btn-primary">View Capabilities</a>
+                <a href="#contact" class="btn-secondary">Contact Agent</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- ✅ KEEP OLD IMAGE (MOVED HERE) -->
+    <div class="hacker-avatar">
+        <img src="assets/me.gif" id="profile-img">
+
+        <div class="scan-line"></div>
+        <div class="ai-label">SUBJECT IDENTIFIED</div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- ABOUT / DIGITAL IDENTITY -->
+<section id="about" class="section">
+
+<h2>Digital Identity</h2>
+
+<div class="identity-content">
+
+<p>
+Cybersecurity enthusiast focused on human-centric security,
+behavioral threat analysis, and social engineering psychology.
+My work explores how trust is established, manipulated,
+and exploited within digital environments.
+</p>
+
+<p>
+I approach cybersecurity from both attacker and defender
+perspectives — analyzing psychological triggers,
+decision-making biases, and real-world exploitation paths
+used in modern cyber attacks.
+</p>
+
+<div class="identity-mission">
+<h4>Mission Directive</h4>
+<p>
+To understand human behavior as the primary attack surface
+and develop awareness-driven defense strategies that reduce
+human-based security vulnerabilities.
+</p>
+</div>
+
+<div class="identity-principles">
+<h4>Core Principles</h4>
+<ul>
+<li>Human behavior is the weakest security layer.</li>
+<li>Awareness is stronger than technology alone.</li>
+<li>Security begins with understanding psychology.</li>
+<li>Attack thinking improves defense design.</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- CAPABILITIES -->
+<section id="capabilities" class="section">
+
+<h2>Capability Matrix</h2>
+
+<div class="skills-matrix">
+
+    <div class="skill">
+        <div class="skill-header">
+            <span>Social Engineering Analysis</span>
+            <span>85%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width:85%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-header">
+            <span>OSINT & Reconnaissance</span>
+            <span>75%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width:75%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-header">
+            <span>Network Security Fundamentals</span>
+            <span>65%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width:65%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-header">
+            <span>Linux Environment</span>
+            <span>70%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width:70%"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <div class="skill-header">
+            <span>Security Awareness Strategy</span>
+            <span>80%</span>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-fill" style="width:80%"></div>
+        </div>
+    </div>
+
+</div>
+
+</section>
+
+<!-- TOOLS -->
+<section id="tools" class="section">
+
+<h2>Technology Stack</h2>
+
+<div class="tools-grid">
+
+<div class="tool">Kali Linux</div>
+<div class="tool">Burp Suite</div>
+<div class="tool">Wireshark</div>
+<div class="tool">OSINT Framework</div>
+<div class="tool">Python</div>
+<div class="tool">Linux</div>
+<div class="tool">Social Engineering Toolkit</div>
+<div class="tool">Networking Fundamentals</div>
+
+</div>
+
+</section>
+
+<section id="operations" class="section">
+
+<h2>Operations</h2>
+
+<div class="operations-grid">
+
+<div class="operation">
+<h3>Phishing Awareness Simulation</h3>
+<p>Designed behavioral phishing scenario to analyze user response patterns and trust triggers.</p>
+</div>
+
+<div class="operation">
+<h3>OSINT Target Profiling</h3>
+<p>Collected publicly available intelligence to demonstrate digital footprint exposure risks.</p>
+</div>
+
+<div class="operation">
+<h3>Security Awareness Research</h3>
+<p>Studied psychological manipulation techniques used in modern cyber attacks.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+
+<h2>Security Operations Dashboard</h2>
+
+<div class="soc-dashboard">
+
+<div class="operation active">
+<h3>Phishing Simulation Lab</h3>
+<p>Status: <span class="status active">ACTIVE</span></p>
+</div>
+
+<div class="operation complete">
+<h3>OSINT Investigation Framework</h3>
+<p>Status: <span class="status complete">COMPLETE</span></p>
+</div>
+
+<div class="operation monitoring">
+<h3>Web Security Assessment</h3>
+<p>Status: <span class="status monitoring">MONITORING</span></p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PSYCHOLOGY LAB -->
+<section id="psychology" class="section psychology-lab">
+
+    <h2 class="section-title">PSYCHOLOGY LAB</h2>
+
+    <p class="lab-intro">
+        Exploring persuasion, cognitive bias, and human decision-making
+        within cybersecurity environments.
+    </p>
+
+    <div class="lab-container">
+
+        <!-- MODULE 1 -->
+        <div class="lab-card">
+            <h3>Social Engineering</h3>
+            <p>
+                Studying how attackers manipulate trust, urgency,
+                and authority to influence human behavior.
+            </p>
+        </div>
+
+        <!-- MODULE 2 -->
+        <div class="lab-card">
+            <h3>Cognitive Bias Analysis</h3>
+            <p>
+                Understanding psychological shortcuts that lead
+                users to security mistakes and risky decisions.
+            </p>
+        </div>
+
+        <!-- MODULE 3 -->
+        <div class="lab-card">
+            <h3>Human Attack Surface</h3>
+            <p>
+                Researching how awareness training and psychology
+                reduce real-world cyber threats.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="intelligence" class="section">
+
+<h2>Visitor Intelligence System</h2>
+
+<div class="intel-box">
+
+<p>Status: <span id="status">Initializing...</span></p>
+<p>Interaction Level: <span id="interaction">0%</span></p>
+<p>Focus Score: <span id="focus">0%</span></p>
+<p>Trust Index: <span id="trust">0%</span></p>
+<p>Risk Profile: <span id="risk">UNKNOWN</span></p>
+
+<div class="progress">
+<div id="progress-bar"></div>
+</div>
+</section>
+
+</div>
+
+<section id="adaptive" class="section">
+
+<h2>Adaptive Interface</h2>
+
+<div class="adaptive-box">
+<p>Visitor Type: <span id="visitorType">Detecting...</span></p>
+<p>Interaction Style: <span id="interactionStyle">Analyzing...</span></p>
+<p>Engagement Level: <span id="engagement">Pending...</span></p>
+</div>
+
+</section>
+
+<section id="osint" class="section">
+
+<h2>OSINT Skill Dossiers</h2>
+
+<div class="osint-grid">
+
+<div class="dossier">
+<h3>Behavioral Analysis</h3>
+<div class="bar"><span style="width:85%"></span></div>
+<p>Status: ACTIVE</p>
+</div>
+
+<div class="dossier">
+<h3>Social Engineering</h3>
+<div class="bar"><span style="width:90%"></span></div>
+<p>Status: HIGH PROFICIENCY</p>
+</div>
+
+<div class="dossier">
+<h3>OSINT Intelligence</h3>
+<div class="bar"><span style="width:75%"></span></div>
+<p>Status: OPERATIONAL</p>
+</div>
+
+<div class="dossier">
+<h3>Threat Modeling</h3>
+<div class="bar"><span style="width:80%"></span></div>
+<p>Status: ACTIVE</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT / SECURE CHANNEL -->
+<section id="contact" class="section contact-section">
+    
+<h2 class="section-title">Secure Communication Channel</h2>
+
+<p class="contact-intro">
+Encrypted communication preferred. Open to cybersecurity,
+research collaboration, and security-focused opportunities.
+</p>
+
+<div class="contact-container">
+
+    <!-- CONTACT CARD -->
+    <div class="contact-card">
+
+        <h3>Primary Channel</h3>
+
+        <p><strong>Email:</strong> contact@ak-lavate.tech</p>
+        <p><strong>Status:</strong> <span class="online">AVAILABLE</span></p>
+        <p><strong>Response Time:</strong> 24–48 Hours</p>
+
+        <div class="contact-actions">
+            <a href="mailto:contact@ak-lavate.tech" class="btn-primary">
+                Initiate Contact
+            </a>
+        </div>
+
+    </div>
+
+    <!-- RECRUITER NOTE -->
+    <div class="contact-card">
+
+        <h3>Recruiter Access</h3>
+
+        <p>
+            Interested in cybersecurity roles, behavioral security
+            research, and social engineering analysis positions.
+        </p>
+
+        <p class="secure-note">
+            All communications treated confidentially.
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+<p>© 2026 Akash Lavate — Cyber Intelligence Interface</p>
+</footer>
+
+<script defer src="js/intelligence.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/neural.js"></script>
+<script defer src="js/matrix.js"></script>
+<script defer src="js/boot.js"></script>
+<script defer src="js/presence.js"></script>
+<script defer src="js/script.js"></script>
+<script defer src="js/console.js"></script>
+<script defer src="js/home.js"></script>
+</body>
+</html>
